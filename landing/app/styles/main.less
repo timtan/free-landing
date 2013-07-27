@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/bootstrap/less/responsive.less"; // Don't forget to comment lines 22 to remove the second import call to **mixin.less**
+@import "../bower_components/font-awesome/less/font-awesome.less";
+
+.ios-inner-content-layout{
+  position: absolute;
+  top: 140px;
+  left: 38px
+}
+.ios-screen-image{
+  width:320px;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+html, body{
+  height: 100%;
+}
+
+.cover-image{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page-first{
+
+  position: relative;
+  
+  height: 100%;
+  background-image: url(../images/times.jpg);
+  .cover-image();
+}
+
+  .landing-left{
+    position: absolute;
+    right:50%;
+    left:0;
+    top:0;
+    bottom:0;
+  }
+
+  .ios-demo{
+    position: absolute;
+    right:20px;
+    top:2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../images/iphone.png);
+    width: 396px;
+    height: 774px;
+  }
+
+
+  .landing-right{
+    position: absolute;
+    left:50%;
+    right:0;
+    top:0;
+    bottom:0;
+  }
+  .landing-content-layout{
+    display: inline-block;
+    padding:20px;
+    padding-top: 40%;
+
+  }
+  .landing-content{
+    display: inline-block;
+    color:white;
+    text-shadow: 2px 2px rgba(0,0,0,0.3), -2px 2px rgba(0,0,0,0.5), -1px -1px rgba(0,0,0,0.4);
+  }
